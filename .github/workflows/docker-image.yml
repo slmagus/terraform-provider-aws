@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker run -it -v ${PWD}:/usr/src/app -w /usr/src/app golang make
+      run: docker run -v ${PWD}:/usr/src/app -w /usr/src/app golang make
